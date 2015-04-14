@@ -1,0 +1,22 @@
+<body class="startscreen">
+  <div id="snowshoe-stamp-screen" class="container">
+    <p class="middle-line">Error. Stamp Again.</p>
+  </div>
+
+  <div class="bottom">
+    <ul class="menu">
+      <li><a href="#">Signin</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Legal</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Security</a></li>
+    </ul>
+  </div>
+  <script>
+    var stampScreenInitData = {
+      "postUrl": "http://"+window.location.host+"/stampscreen",
+      "stampScreenElmId": "snowshoe-stamp-screen"
+    }
+  </script>
+  <script src="https://s3.amazonaws.com/snowshoestamp.com/jquery.snowshoe.js"></script>
+</body>

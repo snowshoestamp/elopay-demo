@@ -1,0 +1,280 @@
+.icon {
+  background-image: url('css/sprite.png'); }
+
+/*Mixins*/
+/*Main Preferences*/
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  text-align: center;
+  min-width: 320px;
+  position: relative; }
+
+a:hover {
+  text-decoration: none; }
+
+.container {
+  overflow: hidden;
+  width: 800px; }
+
+.btn-default {
+  border: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-weight: 400;
+  padding: 20px 16px;
+  text-transform: uppercase;
+  font-size: 30px; }
+
+.bottom {
+  background: #fff;
+  height: 70px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+
+.menu {
+  list-style: none;
+  background: #fff;
+  height: 70px;
+  line-height: 70px;
+  font-size: 25px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0;
+  width: 800px; }
+  .menu li {
+    display: inline-block;
+    width: 19%;
+    text-align: center; }
+    .menu li a {
+      color: #a1d4fc; }
+
+.yellow-btn {
+  background: #f5b653; }
+  .yellow-btn:hover {
+    background: #f5b653; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+/*Typo*/
+h1 {
+  font-size: 60px;
+  font-weight: normal;
+  margin: 0; }
+
+/*Startscreen*/
+.startscreen {
+  background: #2196f3;
+  padding: 40px 0 0px 0; }
+  .startscreen p {
+    font-size: 32px;
+    line-height: 38px;
+    width: 80%;
+    margin: 30px auto 30px auto; }
+  .startscreen .price {
+    margin: 70px 0 30px 0;
+    overflow: hidden; }
+    .startscreen .price #price-field {
+      border: 3px solid #90cbf9;
+      background: #2196f3;
+      font-size: 170px;
+      color: #fff;
+      display: block;
+      width: 100%;
+      height: 230px;
+      text-align: center;
+      line-height: normal;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      margin: 0 auto 30px auto;
+      padding: 0;
+      vertical-align: baseline; }
+    .startscreen .price #note {
+      height: 80px;
+      margin-bottom: 15px;
+      font-size: 30px; }
+    .startscreen .price .select-box {
+      float: right;
+      margin-bottom: 100px; }
+      .startscreen .price .select-box .btn-default {
+        background: #76b9ee;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        margin-right: 40px;
+        position: relative;
+        padding: 5px 10px; }
+        .startscreen .price .select-box .btn-default:after {
+          content: "";
+          display: block;
+          width: 20px;
+          height: 13px;
+          background: url('../images/arrow_down.png') top left no-repeat;
+          position: absolute;
+          top: 14px;
+          right: -33px;
+          cursor: pointer; }
+    .startscreen .price .custom-select {
+      float: right;
+      margin-bottom: 100px;
+      position: relative; }
+      .startscreen .price .custom-select #select-text {
+        background: #76b9ee;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        margin-right: 40px;
+        position: relative;
+        padding: 5px 10px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        cursor: pointer; }
+      .startscreen .price .custom-select #select-button {
+        display: inline-block;
+        width: 20px;
+        height: 13px;
+        background: url('../images/arrow_down.png') top left no-repeat;
+        position: absolute;
+        top: 14px;
+        right: 5px;
+        cursor: pointer; }
+      .startscreen .price .custom-select .select-menu {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 18px; }
+        .startscreen .price .custom-select .select-menu li {
+          cursor: pointer;
+          text-align: left;
+          margin: 5px 0;
+          padding: 0 10px; }
+        .startscreen .price .custom-select .select-menu.open {
+          display: block;
+          position: absolute;
+          top: 37px;
+          left: 0;
+          background: #fff;
+          border-radius: 3px;
+          -moz-border-radius: 3px;
+          -webkit-border-radius: 3px;
+          color: #000;
+          width: 100%; }
+  .startscreen .price-final {
+    font-size: 170px;
+    margin-bottom: 150px; }
+  .startscreen p.middle-line {
+    font-size: 50px;
+    line-height: normal;
+    margin-bottom: 180px; }
+  .startscreen p.bottom-line {
+    font-size: 25px;
+    line-height: normal; }
+
+/*Failed Screen*/
+.failedscreen {
+  background: #f5b653;
+  padding: 60px 0 0px 0; }
+  .failedscreen .cross-icon {
+    width: 285px;
+    height: 286px;
+    background: url(../images/cross_icon.png) top left no-repeat;
+    margin: 0 auto 10px auto; }
+  .failedscreen p.middle-line {
+    font-size: 35px; }
+  .failedscreen .buttons {
+    margin: 100px 0 0 0; }
+  .failedscreen #try {
+    background: #6bb236;
+    color: #fff; }
+  .failedscreen #cancel {
+    background: none;
+    color: #fff; }
+
+/*Conformation Screen*/
+.conformationscreen {
+  background: #6bb236;
+  padding: 60px 0 0px 0; }
+  .conformationscreen .ok-icon {
+    width: 285px;
+    height: 285px;
+    background: url(../images/ok_icon.png) top left no-repeat;
+    margin: 0 auto 10px auto; }
+  .conformationscreen p.middle-line {
+    font-size: 35px;
+    line-height: normal; }
+  .conformationscreen p.bottom-line {
+    font-size: 25px;
+    text-align: left;
+    line-height: normal;
+    margin: 100px 0 120px 0; }
+  .conformationscreen form {
+    margin: 80px 0 60px 0; }
+    .conformationscreen form p {
+      text-align: left;
+      font-size: 15px; }
+    .conformationscreen form .form-control {
+      height: 80px;
+      font-size: 30px;
+      margin-bottom: 15px; }
+
+/*Media Queries*/
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  .startscreen p.middle-line {
+    margin-bottom: 180px; } }
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .container, .menu {
+    width: 740px; } }
+
+@media all and (min-width: 0px) and (max-width: 768px) {
+  h1 {
+    font-size: 30px; }
+  .container {
+    width: 95%;
+    padding: 0 20px; }
+  .startscreen p {
+    font-size: 20px; }
+  .startscreen .price #price-field {
+    height: 100px;
+    font-size: 50px; }
+  .startscreen .price-final {
+    font-size: 100px;
+    line-height: 100px; }
+  .startscreen p.middle-line {
+    margin-bottom: 180px;
+    font-size: 30px; }
+  .startscreen p.bottom-line {
+    font-size: 18px; }
+  .failedscreen p.middle-line {
+    font-size: 25px; }
+  .conformationscreen p.middle-line {
+    font-size: 25px; }
+  .conformationscreen p.bottom-line {
+    font-size: 18px; } }
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .menu {
+    width: 95%;
+    padding: 0 20px;
+    font-size: 20px; }
+    .menu li {
+      width: 19%; } }
+
+@media all and (min-width: 0px) and (max-width: 480px) {
+  .menu {
+    width: 95%;
+    padding: 0 20px;
+    font-size: 15px; }
+    .menu li {
+      width: 18%; } }

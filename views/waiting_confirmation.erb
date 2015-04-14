@@ -1,0 +1,24 @@
+<body class="startscreen">
+  <div id="snowshoe-stamp-screen" class="container">
+    <div class="price-final">€25,00</div>
+    <p class="middle-line">Show this screen<br/> when you pay<br/> and get your reward.</p>
+    <p class="bottom-line">To <a href="conformation-screen.html" style="color: white; text-decoration: underline;">confirm your payment</a> the staff will<br/> tap your screen, be calm it is harmless.</p>
+  </div>
+
+  <div class="bottom">
+    <ul class="menu">
+      <li><a href="#">Signin</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Legal</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Security</a></li>
+    </ul>
+  </div>
+  <script>
+    var stampScreenInitData = {
+      "postUrl": "http://"+window.location.host+"/stampscreen",
+      "stampScreenElmId": "snowshoe-stamp-screen"
+    }
+  </script>
+  <script src="https://s3.amazonaws.com/snowshoestamp.com/jquery.snowshoe.js"></script>
+</body>
